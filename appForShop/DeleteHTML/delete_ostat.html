@@ -1,0 +1,28 @@
+<html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>Удаление остатка</title>
+    <style>
+        body {
+            background-image: url(../back.jpg);
+        }
+    </style>
+</head>
+<body>
+<button onclick="window.location.href='/../main.php'">Вернуться назад</button>
+<form align='center' action='../DeletePHP/delete_ostat.php' method='POST'>
+    <h3 align='center'>Удаление остатка<br/></h3>
+    <table align='center' width='80%' border='0'>
+        <tr>
+            <td width='40%' align='right'>ID остатка:</td>
+            <td>
+                <input type='text' name='IDostatka' size='20'/>
+            </td>
+        </tr>
+    </table>
+    <br>
+    <p align='center'><input type='submit' value='Удалить'/></p>
+</form>
+</body>
+</html>

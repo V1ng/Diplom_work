@@ -1,0 +1,45 @@
+<html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>Добавление нового остатка</title>
+    <style>
+        body {
+            background-image: url(../back.jpg);
+        }
+    </style>
+</head>
+<body>
+<button onclick="window.location.href='/../main.php'">Вернуться назад</button>
+<form align='center' action='../InsertPHP/add_ostat.php' method='POST'>
+    <h3 align='center'>Новый остаток<br/></h3>
+    <table align='center' width='80%' border='0'>
+        <tr>
+            <td width='40%' align='right'>ID:</td>
+            <td>
+                <input type='text' name='IDostatka' size='20'/>
+            </td>
+        </tr>
+        <td width='40%' align='right'>Количество:</td>
+        <td>
+            <input type='text' name='Kolvo' size='20'/>
+        </td>
+        </tr>
+        <tr>
+            <td width='40%' align='right'>Цена:</td>
+            <td>
+                <input type='text' name='Cena' size='20'/>
+            </td>
+        </tr>
+        <tr>
+            <td width='40%' align='right'>Код комплектующей:</td>
+            <td>
+                <input type='text' name='Komplect_Kod_komplect' size='20'/>
+            </td>
+        </tr>
+    </table>
+    <br>
+    <p align='center'><input type='submit' value='Добавить'/></p>
+</form>
+</body>
+</html>

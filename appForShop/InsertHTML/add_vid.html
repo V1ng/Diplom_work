@@ -1,0 +1,32 @@
+<html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>Добавление нового вида комплектующей</title>
+    <style>
+        body {
+            background-image: url(../back.jpg);
+        }
+    </style>
+</head>
+<body>
+<button onclick="window.location.href='/../main.php'">Вернуться назад</button>
+<form align='center' action='../InsertPHP/add_vid.php' method='POST'>
+    <h3 align='center'>Новый вид комплектующей<br/></h3>
+    <table align='center' width='80%' border='0'>
+        <tr>
+            <td width='40%' align='right'>Код вида:</td>
+            <td>
+                <input type='text' name='Kod_vida' size='20'/>
+            </td>
+        </tr>
+        <td width='40%' align='right'>Вид:</td>
+        <td>
+            <input type='text' name='Vid_komplect' size='70'/>
+        </td>
+    </table>
+    <br>
+    <p align='center'><input type='submit' value='Добавить'/></p>
+</form>
+</body>
+</html>

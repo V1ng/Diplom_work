@@ -1,0 +1,63 @@
+<html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>Добавление данных о движении товара</title>
+    <style>
+        body {
+            background-image: url(../back.jpg);
+        }
+    </style>
+</head>
+<body>
+<button onclick="window.location.href='/../main.php'">Вернуться назад</button>
+<form align='center' action='../InsertPHP/add_dvij.php' method='POST'>
+    <h3 align='center'>Новые данные<br/></h3>
+    <table align='center' width='80%' border='0'>
+        <tr>
+            <td width='40%' align='right'>ID движения:</td>
+            <td>
+                <input type='text' name='IDdvij' size='20'/>
+            </td>
+        </tr>
+        <td width='40%' align='right'>Номер документа:</td>
+        <td>
+            <input type='text' name='Nomer_doc' size='20'/>
+        </td>
+        </tr>
+        <tr>
+            <td width='40%' align='right'>Код операции:</td>
+            <td>
+                <input type='text' name='Kod_oper' size='20'/>
+            </td>
+        </tr>
+        <tr>
+            <td width='40%' align='right'>Дата:</td>
+            <td>
+                <input type='date' name='Data' size='20'/>
+            </td>
+        </tr>
+        <tr>
+            <td width='40%' align='right'>Общая стоимость:</td>
+            <td>
+                <input type='text' name='Obchaya_stoim' size='20'/>
+            </td>
+        </tr>
+        <tr>
+            <td width='40%' align='right'>ID контрагента:</td>
+            <td>
+                <input type='text' name='Kontragent_IDkontragenta' size='20'/>
+            </td>
+        </tr>
+        <tr>
+            <td width='40%' align='right'>ID заказа:</td>
+            <td>
+                <input type='text' name='Zakaz_IDzakaza' size='20'/>
+            </td>
+        </tr>
+    </table>
+    <br>
+    <p align='center'><input type='submit' value='Добавить'/></p>
+</form>
+</body>
+</html>

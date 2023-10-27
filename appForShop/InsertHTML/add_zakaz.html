@@ -1,0 +1,51 @@
+<html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>Добавление нового заказа</title>
+    <style>
+        body {
+            background-image: url(../back.jpg);
+        }
+    </style>
+</head>
+<body>
+<button onclick="window.location.href='/../main.php'">Вернуться назад</button>
+<form align='center' action='../InsertPHP/add_zakaz.php' method='POST'>
+    <h3 align='center'>Новый заказ<br/></h3>
+    <table align='center' width='80%' border='0'>
+        <tr>
+            <td width='40%' align='right'>ID заказа:</td>
+            <td>
+                <input type='text' name='IDzakaza' size='20'/>
+            </td>
+        </tr>
+        <td width='40%' align='right'>Номер:</td>
+        <td>
+            <input type='text' name='Nomer' size='50'/>
+        </td>
+        </tr>
+        <tr>
+            <td width='40%' align='right'>Дата заказа:</td>
+            <td>
+                <input type='date' name='Data_zakaza' size='20'/>
+            </td>
+        </tr>
+        <tr>
+            <td width='40%' align='right'>Итоговая стоимость:</td>
+            <td>
+                <input type='text' name='Itogovaya_stoim' size='20'/>
+            </td>
+        <tr>
+            <td width='40%' align='right'>ID контрагента:</td>
+            <td>
+                <input type='text' name='Kontragent' size='20'/>
+            </td>
+        </tr>
+        </tr>
+    </table>
+    <br>
+    <p align='center'><input type='submit' value='Добавить'/></p>
+</form>
+</body>
+</html>
